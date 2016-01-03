@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patterns in JS | Module Pattern</title>
+    <script src="modulePattern.js"></script>
+    <script>
+        window.onload = function (){
+            var calc = new myNS.ModulePatternCalculator('eq');  // instantiate Calculator
+            calc.add(2, 3);  // call add on calc object
+            // alert(calc.eqCtl); // inaccessible
+        };
+
+    </script>
+</head>
+<body>
+    <div id="eq"></div>
+</body>
+</html>
